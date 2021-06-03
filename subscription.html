@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+    <title>About</title>
+	<style>
+	body {
+		background: #383636
+	}
+	</style>
+	<script src="script.js"></script>
+</head>
+
+<body>
+
+    <header class="top_header">
+		<div class="wrapper">
+		
+		<a href="index.html" class="logo">
+				<img src="img/logo.png" alt="logo" srcset="img/logo.png" width=58px height=58px/>
+			</a>
+		
+		<nav class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" class="active">Subscription</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+		
+		</div>
+	</header>
+	<section class="page_heading about_page2">
+		<h2>Подпишитесь на рассылку</h2>
+		<span class="subtitle">Будьте в курсе последних событий!</span>
+	</section>
+	
+	<form action="index.php" class="send_message" method="post" autocomplete="off">
+		<div class="form_message"> 
+			<div>
+				<label>Имя <span>*</span></label>
+				<input type='text' name='username' required>
+			</div>
+			<div>
+				<label>E-mail <span>*</span></label>
+				<input type='text' name='email' required>
+			</div>
+			<div>
+				<label>Сообщение</label>
+				<input type='text' name='message'>
+			</div>
+			<input type="hidden" name="hidden" value="ok">
+			<input class="butt_message" type='submit' value='Подписаться' name='Submit' onClick="return Formdata(this.form)">
+		</div>
+	</form>
+	
+	
+	
+	<footer class="top_footer picture">
+		<div>«ООО «Кинолапс», адрес местонахождения: 123456, Россия, г. Москва, ул. Садовническая, д. 82, стр. 2, пом. 9А01. Адрес для обращений пользователей: kinolaps@support.yandex.ru</div>
+		
+		
+	</footer>	
+</body>
+</html>
